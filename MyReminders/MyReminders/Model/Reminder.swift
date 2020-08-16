@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Reminder{
+class Reminder : Codable{
     //variables
     var title: String
     var date:Date

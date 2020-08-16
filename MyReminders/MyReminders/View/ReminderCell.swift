@@ -19,8 +19,25 @@ class ReminderCell : UITableViewCell {
     
     @IBOutlet weak var dateLable: UILabel!
     
-    func update(reminder: Reminder){
+    @IBOutlet weak var infoButton: UIButton!
+    
+    
+    
+    
+    
+    
+    
+    
+    func update(reminder: Reminder, index: Int){
         titleLable.text = reminder.title
+        
+        infoButton.tag = index //for the editing
+        
+        //make reminder identifier round
+        isCompletedView.layer.cornerRadius = isCompletedView.frame.size.width / 2.0
+        isCompletedView.layer.borderColor = UIColor.lightGray.cgColor
+        
+        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd/yy hh:mma"
         dateLable.text = dateFormatter.string(from: reminder.date)

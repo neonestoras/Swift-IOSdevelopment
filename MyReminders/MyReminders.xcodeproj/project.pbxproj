@@ -16,6 +16,8 @@
 		1E68D6DB24E3FA6F00E67086 /* ReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E68D6DA24E3FA6F00E67086 /* ReminderService.swift */; };
 		1E68D6DD24E418DE00E67086 /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E68D6DC24E418DE00E67086 /* RemindersViewController.swift */; };
 		1E68D6DF24E4198400E67086 /* ReminderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E68D6DE24E4198400E67086 /* ReminderCell.swift */; };
+		1E68D6E124E4442200E67086 /* FavouriteReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E68D6E024E4442200E67086 /* FavouriteReminderViewController.swift */; };
+		1E68D6E324E44B6300E67086 /* NewReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E68D6E224E44B6300E67086 /* NewReminderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		1E68D6DA24E3FA6F00E67086 /* ReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderService.swift; sourceTree = "<group>"; };
 		1E68D6DC24E418DE00E67086 /* RemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
 		1E68D6DE24E4198400E67086 /* ReminderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCell.swift; sourceTree = "<group>"; };
+		1E68D6E024E4442200E67086 /* FavouriteReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteReminderViewController.swift; sourceTree = "<group>"; };
+		1E68D6E224E44B6300E67086 /* NewReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReminderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				1E68D6DC24E418DE00E67086 /* RemindersViewController.swift */,
+				1E68D6E024E4442200E67086 /* FavouriteReminderViewController.swift */,
+				1E68D6E224E44B6300E67086 /* NewReminderViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,10 +186,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E68D6D924E3F97400E67086 /* Reminder.swift in Sources */,
+				1E68D6E324E44B6300E67086 /* NewReminderViewController.swift in Sources */,
 				1E68D6DF24E4198400E67086 /* ReminderCell.swift in Sources */,
 				1E68D6C124E3F68500E67086 /* AppDelegate.swift in Sources */,
 				1E68D6C324E3F68500E67086 /* SceneDelegate.swift in Sources */,
 				1E68D6DB24E3FA6F00E67086 /* ReminderService.swift in Sources */,
+				1E68D6E124E4442200E67086 /* FavouriteReminderViewController.swift in Sources */,
 				1E68D6DD24E418DE00E67086 /* RemindersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
