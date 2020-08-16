@@ -12,6 +12,11 @@
 		1ECB0E4224E98097004D5301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ECB0E4024E98097004D5301 /* Main.storyboard */; };
 		1ECB0E4424E9809D004D5301 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ECB0E4324E9809D004D5301 /* Assets.xcassets */; };
 		1ECB0E4724E9809D004D5301 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ECB0E4524E9809D004D5301 /* LaunchScreen.storyboard */; };
+		1ECB0E5324E981A9004D5301 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB0E5224E981A9004D5301 /* Location.swift */; };
+		1ECB0E5624E982A4004D5301 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB0E5524E982A4004D5301 /* LocationService.swift */; };
+		1ECB0E5924E984F6004D5301 /* Locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ECB0E5824E984F6004D5301 /* Locations.json */; };
+		1ECB0E5B24E98B93004D5301 /* RideQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB0E5A24E98B93004D5301 /* RideQuote.swift */; };
+		1ECB0E5D24E98D0B004D5301 /* RideQuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB0E5C24E98D0B004D5301 /* RideQuoteService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		1ECB0E4324E9809D004D5301 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1ECB0E4624E9809D004D5301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1ECB0E4824E9809D004D5301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ECB0E5224E981A9004D5301 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		1ECB0E5524E982A4004D5301 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		1ECB0E5824E984F6004D5301 /* Locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Locations.json; sourceTree = "<group>"; };
+		1ECB0E5A24E98B93004D5301 /* RideQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideQuote.swift; sourceTree = "<group>"; };
+		1ECB0E5C24E98D0B004D5301 /* RideQuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideQuoteService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				1ECB0E3A24E98097004D5301 /* AppDelegate.swift */,
+				1ECB0E5824E984F6004D5301 /* Locations.json */,
 				1ECB0E3C24E98097004D5301 /* SceneDelegate.swift */,
 			);
 			path = "Supporting Files";
@@ -92,8 +103,20 @@
 		1ECB0E5124E98104004D5301 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1ECB0E5424E9828C004D5301 /* Service */,
+				1ECB0E5224E981A9004D5301 /* Location.swift */,
+				1ECB0E5A24E98B93004D5301 /* RideQuote.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1ECB0E5424E9828C004D5301 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1ECB0E5524E982A4004D5301 /* LocationService.swift */,
+				1ECB0E5C24E98D0B004D5301 /* RideQuoteService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +179,7 @@
 			files = (
 				1ECB0E4724E9809D004D5301 /* LaunchScreen.storyboard in Resources */,
 				1ECB0E4424E9809D004D5301 /* Assets.xcassets in Resources */,
+				1ECB0E5924E984F6004D5301 /* Locations.json in Resources */,
 				1ECB0E4224E98097004D5301 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,7 +191,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ECB0E5D24E98D0B004D5301 /* RideQuoteService.swift in Sources */,
 				1ECB0E3B24E98097004D5301 /* AppDelegate.swift in Sources */,
+				1ECB0E5324E981A9004D5301 /* Location.swift in Sources */,
+				1ECB0E5624E982A4004D5301 /* LocationService.swift in Sources */,
+				1ECB0E5B24E98B93004D5301 /* RideQuote.swift in Sources */,
 				1ECB0E3D24E98097004D5301 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -298,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
