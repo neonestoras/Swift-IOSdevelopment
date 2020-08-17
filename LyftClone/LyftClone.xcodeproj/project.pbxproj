@@ -18,6 +18,8 @@
 		1ECB0E5B24E98B93004D5301 /* RideQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB0E5A24E98B93004D5301 /* RideQuote.swift */; };
 		1ECB0E5D24E98D0B004D5301 /* RideQuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB0E5C24E98D0B004D5301 /* RideQuoteService.swift */; };
 		1ED1176A24E9F3D200123521 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED1176924E9F3D200123521 /* HomeViewController.swift */; };
+		1ED1176C24EABF7E00123521 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED1176B24EABF7E00123521 /* LocationCell.swift */; };
+		1ED1176E24EAE1AE00123521 /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED1176D24EAE1AE00123521 /* VehicleAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		1ECB0E5A24E98B93004D5301 /* RideQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideQuote.swift; sourceTree = "<group>"; };
 		1ECB0E5C24E98D0B004D5301 /* RideQuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideQuoteService.swift; sourceTree = "<group>"; };
 		1ED1176924E9F3D200123521 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1ED1176B24EABF7E00123521 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		1ED1176D24EAE1AE00123521 /* VehicleAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 			children = (
 				1ECB0E4024E98097004D5301 /* Main.storyboard */,
 				1ECB0E4524E9809D004D5301 /* LaunchScreen.storyboard */,
+				1ED1176B24EABF7E00123521 /* LocationCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 				1ECB0E5424E9828C004D5301 /* Service */,
 				1ECB0E5224E981A9004D5301 /* Location.swift */,
 				1ECB0E5A24E98B93004D5301 /* RideQuote.swift */,
+				1ED1176D24EAE1AE00123521 /* VehicleAnnotation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,6 +206,8 @@
 				1ECB0E5624E982A4004D5301 /* LocationService.swift in Sources */,
 				1ECB0E5B24E98B93004D5301 /* RideQuote.swift in Sources */,
 				1ED1176A24E9F3D200123521 /* HomeViewController.swift in Sources */,
+				1ED1176E24EAE1AE00123521 /* VehicleAnnotation.swift in Sources */,
+				1ED1176C24EABF7E00123521 /* LocationCell.swift in Sources */,
 				1ECB0E3D24E98097004D5301 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

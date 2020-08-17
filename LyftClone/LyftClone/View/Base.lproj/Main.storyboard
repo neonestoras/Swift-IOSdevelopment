@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oaU-bg-4UU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -145,19 +145,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rise and shine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOA-C2-Frr">
-                                <rect key="frame" x="20" y="530" width="100" height="18"/>
+                                <rect key="frame" x="20" y="600" width="100" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where are you going?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzS-Nt-sMw">
-                                <rect key="frame" x="20" y="558" width="233.5" height="27.5"/>
+                                <rect key="frame" x="20" y="628" width="233.5" height="27.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D96-No-3ir">
-                                <rect key="frame" x="15" y="595.5" width="384" height="50"/>
+                                <rect key="frame" x="15" y="665.5" width="384" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="dka-oc-dtz"/>
                                 </constraints>
@@ -168,10 +169,10 @@
                                 </state>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PhG-PP-ZfH">
-                                <rect key="frame" x="0.0" y="655.5" width="414" height="206.5"/>
+                                <rect key="frame" x="0.0" y="725.5" width="414" height="136.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="60" id="LWZ-bu-sk6">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LocationCell" rowHeight="60" id="LWZ-bu-sk6" customClass="LocationCell" customModule="LyftClone" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LWZ-bu-sk6" id="foq-or-pBy">
@@ -208,17 +209,28 @@
                                                 <constraint firstItem="dc2-8f-T7Y" firstAttribute="leading" secondItem="E1i-a3-X5l" secondAttribute="leading" id="z2N-Nn-bBX"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="adressLine1" destination="E1i-a3-X5l" id="AOm-9Z-R1T"/>
+                                            <outlet property="adressLine2" destination="dc2-8f-T7Y" id="V6F-yD-uMO"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="oaU-bg-4UU" id="Zri-Rn-84t"/>
+                                    <outlet property="delegate" destination="oaU-bg-4UU" id="Rd8-sJ-vdK"/>
+                                </connections>
                             </tableView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="f5j-Eq-Irc">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="510"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f5j-Eq-Irc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="580"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="510" id="lVj-lC-cba"/>
+                                    <constraint firstAttribute="height" constant="580" id="lVj-lC-cba"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="oaU-bg-4UU" id="i8O-tq-oes"/>
+                                </connections>
                             </mapView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="uF1-fp-WBH">
-                                <rect key="frame" x="23" y="608" width="25" height="25"/>
+                                <rect key="frame" x="23" y="678" width="25" height="25"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -242,6 +254,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="maz-Fd-YU7"/>
                     </view>
+                    <connections>
+                        <outlet property="searchButton" destination="D96-No-3ir" id="qeq-OC-bYK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dok-UL-n6w" sceneMemberID="firstResponder"/>
             </objects>
