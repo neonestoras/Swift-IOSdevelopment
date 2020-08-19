@@ -20,6 +20,7 @@
 		1ED1176A24E9F3D200123521 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED1176924E9F3D200123521 /* HomeViewController.swift */; };
 		1ED1176C24EABF7E00123521 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED1176B24EABF7E00123521 /* LocationCell.swift */; };
 		1ED1176E24EAE1AE00123521 /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED1176D24EAE1AE00123521 /* VehicleAnnotation.swift */; };
+		1ED1177024ED53E100123521 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED1176F24ED53E100123521 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		1ED1176924E9F3D200123521 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1ED1176B24EABF7E00123521 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		1ED1176D24EAE1AE00123521 /* VehicleAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
+		1ED1176F24ED53E100123521 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				1ED1176924E9F3D200123521 /* HomeViewController.swift */,
+				1ED1176F24ED53E100123521 /* LocationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				1ECB0E5324E981A9004D5301 /* Location.swift in Sources */,
 				1ECB0E5624E982A4004D5301 /* LocationService.swift in Sources */,
 				1ECB0E5B24E98B93004D5301 /* RideQuote.swift in Sources */,
+				1ED1177024ED53E100123521 /* LocationViewController.swift in Sources */,
 				1ED1176A24E9F3D200123521 /* HomeViewController.swift in Sources */,
 				1ED1176E24EAE1AE00123521 /* VehicleAnnotation.swift in Sources */,
 				1ED1176C24EABF7E00123521 /* LocationCell.swift in Sources */,
