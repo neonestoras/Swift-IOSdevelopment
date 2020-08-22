@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E796D4624F1265E0062CA30 /* RouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E796D4524F1265E0062CA30 /* RouteViewController.swift */; };
+		1E796D4824F12E460062CA30 /* LocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E796D4724F12E460062CA30 /* LocationAnnotation.swift */; };
+		1E796D4A24F14EAD0062CA30 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E796D4924F14EAD0062CA30 /* Driver.swift */; };
+		1E796D4C24F14F970062CA30 /* DriverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E796D4B24F14F970062CA30 /* DriverService.swift */; };
+		1E796D4E24F15C980062CA30 /* DriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E796D4D24F15C980062CA30 /* DriverViewController.swift */; };
+		1EC7950F24EEA1EB003E2C66 /* RideQuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC7950E24EEA1EB003E2C66 /* RideQuoteCell.swift */; };
 		1ECB0E3B24E98097004D5301 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB0E3A24E98097004D5301 /* AppDelegate.swift */; };
 		1ECB0E3D24E98097004D5301 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB0E3C24E98097004D5301 /* SceneDelegate.swift */; };
 		1ECB0E4224E98097004D5301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ECB0E4024E98097004D5301 /* Main.storyboard */; };
@@ -24,6 +30,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E796D4524F1265E0062CA30 /* RouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteViewController.swift; sourceTree = "<group>"; };
+		1E796D4724F12E460062CA30 /* LocationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAnnotation.swift; sourceTree = "<group>"; };
+		1E796D4924F14EAD0062CA30 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		1E796D4B24F14F970062CA30 /* DriverService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverService.swift; sourceTree = "<group>"; };
+		1E796D4D24F15C980062CA30 /* DriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverViewController.swift; sourceTree = "<group>"; };
+		1EC7950E24EEA1EB003E2C66 /* RideQuoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideQuoteCell.swift; sourceTree = "<group>"; };
 		1ECB0E3724E98097004D5301 /* LyftClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LyftClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ECB0E3A24E98097004D5301 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1ECB0E3C24E98097004D5301 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +109,8 @@
 			children = (
 				1ED1176924E9F3D200123521 /* HomeViewController.swift */,
 				1ED1176F24ED53E100123521 /* LocationViewController.swift */,
+				1E796D4524F1265E0062CA30 /* RouteViewController.swift */,
+				1E796D4D24F15C980062CA30 /* DriverViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -104,9 +118,11 @@
 		1ECB0E5024E980FC004D5301 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1ECB0E5A24E98B93004D5301 /* RideQuote.swift */,
 				1ECB0E4024E98097004D5301 /* Main.storyboard */,
 				1ECB0E4524E9809D004D5301 /* LaunchScreen.storyboard */,
 				1ED1176B24EABF7E00123521 /* LocationCell.swift */,
+				1EC7950E24EEA1EB003E2C66 /* RideQuoteCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,8 +132,9 @@
 			children = (
 				1ECB0E5424E9828C004D5301 /* Service */,
 				1ECB0E5224E981A9004D5301 /* Location.swift */,
-				1ECB0E5A24E98B93004D5301 /* RideQuote.swift */,
 				1ED1176D24EAE1AE00123521 /* VehicleAnnotation.swift */,
+				1E796D4724F12E460062CA30 /* LocationAnnotation.swift */,
+				1E796D4924F14EAD0062CA30 /* Driver.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,6 +144,7 @@
 			children = (
 				1ECB0E5524E982A4004D5301 /* LocationService.swift */,
 				1ECB0E5C24E98D0B004D5301 /* RideQuoteService.swift */,
+				1E796D4B24F14F970062CA30 /* DriverService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -203,12 +221,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E796D4E24F15C980062CA30 /* DriverViewController.swift in Sources */,
+				1EC7950F24EEA1EB003E2C66 /* RideQuoteCell.swift in Sources */,
+				1E796D4A24F14EAD0062CA30 /* Driver.swift in Sources */,
+				1E796D4824F12E460062CA30 /* LocationAnnotation.swift in Sources */,
 				1ECB0E5D24E98D0B004D5301 /* RideQuoteService.swift in Sources */,
+				1E796D4624F1265E0062CA30 /* RouteViewController.swift in Sources */,
 				1ECB0E3B24E98097004D5301 /* AppDelegate.swift in Sources */,
 				1ECB0E5324E981A9004D5301 /* Location.swift in Sources */,
 				1ECB0E5624E982A4004D5301 /* LocationService.swift in Sources */,
 				1ECB0E5B24E98B93004D5301 /* RideQuote.swift in Sources */,
 				1ED1177024ED53E100123521 /* LocationViewController.swift in Sources */,
+				1E796D4C24F14F970062CA30 /* DriverService.swift in Sources */,
 				1ED1176A24E9F3D200123521 /* HomeViewController.swift in Sources */,
 				1ED1176E24EAE1AE00123521 /* VehicleAnnotation.swift in Sources */,
 				1ED1176C24EABF7E00123521 /* LocationCell.swift in Sources */,

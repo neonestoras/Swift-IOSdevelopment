@@ -11,7 +11,7 @@ import CoreLocation
 import MapKit
 
 
-class HomeViewController : UIViewController, UITableViewDataSource, CLLocationManagerDelegate, MKMapViewDelegate{
+class HomeViewController : UIViewController, UITableViewDataSource, CLLocationManagerDelegate, MKMapViewDelegate, UITableViewDelegate{
     
     var locations = [Location]()
     @IBOutlet weak var searchButton: UIButton!
@@ -45,7 +45,24 @@ class HomeViewController : UIViewController, UITableViewDataSource, CLLocationMa
         locations = [recentLocations[0], recentLocations[1]]
         
     }
-
+    //remove navigατιον bar
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true 
+    }
+    //pass current location as pick up from home view controller to locations view
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let locationViewController = segue.destination as? LocationViewController{
+            locationViewController.pickupLocation = currentUserLocation
+        } else if let routeViewController = segue.destination as? RouteViewController, let dropoffLoaction = sender as? Location{
+            routeViewController.pickupLocation = currentUserLocation
+            routeViewController.dropoffLocation = dropoffLoaction
+        }
+    }
+    
+    
+    
     ///////////////////////////////////////////
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let firstLocation = locations.first!
@@ -70,6 +87,13 @@ class HomeViewController : UIViewController, UITableViewDataSource, CLLocationMa
         return cell
     }
     ///////////////////////////////////////////
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let dropoffLocation = locations[indexPath.row]
+        performSegue(withIdentifier: "RouteSegue", sender: dropoffLocation)
+        
+        
+    }
     
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
         //zoom in in user colation
