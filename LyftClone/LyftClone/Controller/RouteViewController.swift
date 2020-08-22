@@ -144,6 +144,12 @@ class RouteViewController: UIViewController, UITableViewDataSource, UITableViewD
         annotationView?.image = UIImage(named: "dot-\(locationAnnotation.locationType)")
         return annotationView
         
-        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let driverViewController = segue.description as? DriverViewController{
+            driverViewController.pickupLocation = pickupLocation
+            driverViewController.dropoffLocation = dropoffLocation
+        }
     }
 }
